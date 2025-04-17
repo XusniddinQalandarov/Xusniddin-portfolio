@@ -22,6 +22,7 @@
             <li><a href="#">Portfolio</a></li>
             <li><a href="mailto:xusniddinqalandarov2004@gmail.com" target="_blank">Contact</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="https://raw.githubusercontent.com/xusniddin/xusniddin-portfolio/main/Xusniddin_Qalandarov_CV.pdf" target="_blank" download>CV</a></li>
         </ul>
         <a href="https://www.linkedin.com/in/xusniddin-qalandarov-4bb43224a/" target="_blank">
         <button class="hire-btn"> Hire Me</button>
@@ -85,6 +86,9 @@
             </p>
             <a href="https://www.linkedin.com/in/xusniddin-qalandarov-4bb43224a/" target="_blank">
             <button class="hire-btn">Hire Me</button>
+            </a>
+            <a href="https://raw.githubusercontent.com/xusniddin/xusniddin-portfolio/main/Xusniddin_Qalandarov_CV.pdf" target="_blank" download>
+            <button class="hire-btn cv-btn">Download CV</button>
             </a>
         </div>
     </div>
@@ -164,18 +168,15 @@
             <div class="news-col">
                 <h4>NewsLetter</h4>
                 <p>Enter your email and get notified about news, of.</p>
-
-                <form>
-                    <input type="email" placeholder="Your email address">
-                    <button><i class='bx bxl-telegram'></i></button>
+                <form action="https://formspree.io/f/mblgeyvd" method="POST">
+                    <input type="email" name="email" placeholder="Your email address" required>
+                    <input type="hidden" name="_subject" value="Newsletter Subscription">
+                    <button type="submit" aria-label="Subscribe to newsletter"><i class='bx bxl-telegram'></i></button>
+                    <div class="form-message"></div>
                 </form>
-
             </div>
-
         </div>
-
     </footer>
     <script src="index.js"></script>
 </body>
-
 </html>
